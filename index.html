@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <title>Week8 Application</title>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script src="js/jquery.js" defer></script>
+        <script src="js/bootstrap.js" defer></script>
+        <script src="js/script.js" defer></script>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="js/main.js" defer></script>
+    </head>
+
+	<body>
+        <div class="container">
+
+            <div class="page-header text-center">
+                <h1>TO DO LIST</h1>
+            </div>
+
+            <hr>
+
+            <div class="card card-default">
+                <div class="card-heading">
+                    <div class="input-group mb-3" id="new-tasks-input">
+                        <h1>{{ message }}</h1>
+                        <input type="text" class="form-control" placeholder="Input the name of the task">
+                        <button v-on:click="increase" class="btn btn-outline-secondary new-task-submit" type="button" id="button-addon2">Add task</button>
+                    </div>
+                </div>
+                <div class="card-body">
+					<section class="task-list">
+						<h2>Tasks</h2>
+						<div id="tasks" class="task">
+                            <div class="actions">
+                                <div class="form-check">
+                                    <input class="form-check-input col-md-12" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <div class="content">
+                                            <input  type="text"  class="text"  value="A new task">
+                                        </div>                                     
+                                    </label>
+                                </div>
+                            </div>
+						</div>
+					</section>
+					
+                </div>
+
+                <div class="card-footer">
+                </div>
+				
+            </div>
+        </div>
+    </body>
+	</body>
+
+</html>
